@@ -1,7 +1,8 @@
-import ExpenseList from "./components/ExpenseList";
+import ExpenseList from "./components/expenses/ExpenseList";
 
-function App() {
+import React from "react";
 
+const App = () => {
   const expenses = [
     {
       id: 'e1',
@@ -23,6 +24,13 @@ function App() {
       date: new Date(2021, 5, 12),
     }
   ]
+
+  // React.createElement(
+  //   'div',
+  //   {},
+  //   React.createElement('h2', '', 'Test'),
+  //   React.createElement(ExpenseList, { expenses: expenses })
+  // );
 
   return (
     <div>
