@@ -26,9 +26,7 @@ function App() {
 
   return (
     <div>
-      <p>This is also visible!</p>
       <ExpenseList expenses={expenses} />
-
     </div>
   );
 }
